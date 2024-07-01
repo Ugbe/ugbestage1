@@ -16,8 +16,8 @@ import requests
 
 def hello(request):
     visitor_name = request.GET.get('visitor_name', 'Visitor')
-    client_ip, city = get_client_ip_and_city(request)
-    temperature = get_weather(city)
+    client_ip = get_client_ip(request)
+    city, temperature = get_location_and_weather(client_ip)
     response_data = {
         "client_ip": client_ip,
         "location": city,
