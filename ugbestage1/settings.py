@@ -23,10 +23,9 @@ GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-lb#i#4)wq8h%pi7=67iorticci#sdn_bftw5$(n)3)4mu)8nmo"
-IPINFO_TOKEN = '38f6ff0c534863'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ugbestage1.pythonanywhere.com', '127.0.0.1']
 
@@ -51,7 +50,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'ipinfo_django.middleware.IPinfoMiddleware',
 ]
 
 ROOT_URLCONF = "ugbestage1.urls"
