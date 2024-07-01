@@ -1,0 +1,6 @@
+django 4.2.4
+geoip =  4.8.0
+
+
+django-ipware = 2.0.3
+ipinfo-django = 4.2.1
